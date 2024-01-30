@@ -26,6 +26,7 @@ export const signUpAction = (params) => async (dispatch) => {
 };
 export const loginAction = (params) => async (dispatch) => {
   console.log("Login Params Received....===>", params);
+  // for local storage
   const userArray = localStorage.getItem("users")
     ? JSON.parse(localStorage.getItem("users"))
     : [];
